@@ -1,0 +1,30 @@
+---
+description: Antes de qualquer pedido, conferir as skills do projeto em .agents/skills
+alwaysApply: true
+---
+
+# Skills do projeto primeiro
+
+O primeiro passo de qualquer pedido é conferir as skills deste repositório, antes de responder, planejar ou alterar código.
+
+## Onde estão
+
+- Pasta: `.agents/skills/`
+- Cada skill é um diretório com `SKILL.md`. O frontmatter traz `name` e `description`.
+
+## O que fazer
+
+1. Liste `.agents/skills/*/SKILL.md`.
+2. Leia o frontmatter de cada skill e compare `description` com o pedido.
+3. Se uma skill se aplicar, leia o `SKILL.md` inteiro e siga o fluxo dele antes de implementar. Leia também os arquivos em `references/` que a skill indicar.
+4. Se nenhuma skill se aplicar, siga o pedido normalmente.
+
+A lista de skills muda. A pasta é a fonte da verdade; não dependa de uma lista memorizada.
+
+## Exemplo
+
+Pedido: "protege essa rota com Clerk".
+
+1. Conferir `.agents/skills/`.
+2. `clerk-nextjs-patterns` descreve middleware, Server Actions e cache com Clerk — aplica.
+3. Ler `.agents/skills/clerk-nextjs-patterns/SKILL.md` e seguir o padrão de lá.

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 52">
+  <defs>
+    <linearGradient id="authfa-shield" x1="8" y1="2" x2="40" y2="50" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4a4a4a"/>
+      <stop offset="0.42" stop-color="#1c1c1c"/>
+      <stop offset="1" stop-color="#0c0c0c"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#authfa-shield)" d="M24 2.2c7.4 2.4 15 3.8 20.2 4.6.2 11.2-.6 20.4-7 28.2C32.4 42 28.2 47.2 24 50.6 19.8 47.2 15.6 42 10.8 35 4.4 27.2 3.6 18 3.8 6.8 9 6 16.6 4.6 24 2.2Z"/>
+  <path d="M31.2 16.6a9.2 9.2 0 1 0 .2 14.2" fill="none" stroke="white" stroke-width="3.1" stroke-linecap="round"/>
+  <circle cx="22.6" cy="23.6" r="2.5" fill="white"/>
+</svg>

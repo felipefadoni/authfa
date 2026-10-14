@@ -1,0 +1,39 @@
+{
+  "name": "authfa",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": "24.21.0",
+    "pnpm": "12.11.2"
+  },
+  "packageManager": "pnpm@12.11.2",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "prestart": "pnpm db:migrate && pnpm db:seed",
+    "start": "next start",
+    "db:migrate": "node --import tsx ./node_modules/knex/bin/cli.js migrate:latest --knexfile knexfile.ts",
+    "db:rollback": "node --import tsx ./node_modules/knex/bin/cli.js migrate:rollback --knexfile knexfile.ts",
+    "db:seed": "node --import tsx ./node_modules/knex/bin/cli.js seed:run --knexfile knexfile.ts"
+  },
+  "dependencies": {
+    "jose": "^6.2.12",
+    "knex": "^3.3.0",
+    "next": "^16.4.0",
+    "pg": "^8.23.1",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "server-only": "^0.0.1",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.3",
+    "@types/node": "^26.6.5",
+    "@types/pg": "^8.23.1",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "tailwindcss": "^4.3.3",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
